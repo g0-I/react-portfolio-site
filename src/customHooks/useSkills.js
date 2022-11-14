@@ -23,6 +23,7 @@ const fetchReposApi = () => {
 useEffect(() => {
   if (state.requestStates !== requestStates.loading) { return; }
   fetchReposApi();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [state.requestStates]);
 
   useEffect(() => {
